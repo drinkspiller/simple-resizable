@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@use './reset.css';
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// App layout
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1ex;
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
