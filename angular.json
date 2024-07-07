@@ -12,7 +12,7 @@
           "style": "scss",
           "skipTests": true,
           "changeDetection": "OnPush",
-          "prefix": "simple-canvas"
+          "prefix": "simple-resizable"
         },
         "@schematics/angular:class": {
           "skipTests": true

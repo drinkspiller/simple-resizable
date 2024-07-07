@@ -1,0 +1,76 @@
+$handle_size: 12px;
+
+:host {
+  position: relative;
+
+  &.selected {
+    border: solid 1px #9ce5fb;
+  }
+}
+
+.resize-handle {
+  background: rgba(255, 255, 255, .7);
+  border: 1px solid #26bbe7;
+  max-height: $handle_size;
+  max-width: $handle_size;
+  min-height: $handle_size;
+  min-width: $handle_size;
+  position: absolute;
+  z-index: 100;
+}
+
+.bottom-left {
+  cursor: nesw-resize;
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.bottom-middle {
+  cursor: ns-resize;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.bottom-right {
+  cursor: nwse-resize;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
+
+.middle-left {
+  cursor: ew-resize;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-right {
+  cursor: ew-resize;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.top-left {
+  cursor: nwse-resize;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.top-middle {
+  cursor: ns-resize;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-right {
+  cursor: nesw-resize;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}

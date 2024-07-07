@@ -1,0 +1,46 @@
+<!-- Outlet for projected content. -->
+<ng-content></ng-content>
+
+<!-- Resize handles. -->
+@if (isSelected()) {
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.TOP_LEFT"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.TOP_MIDDLE"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.TOP_RIGHT"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.MIDDLE_LEFT"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.MIDDLE_RIGHT"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.BOTTOM_LEFT"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.BOTTOM_MIDDLE"
+  (mousedown)="startResize($event)"
+></div>
+<div
+  class="resize-handle"
+  [class]="ResizeDirection.BOTTOM_RIGHT"
+  (mousedown)="startResize($event)"
+></div>
+}
